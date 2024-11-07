@@ -7,10 +7,10 @@ on:
 
 jobs:
   lint-format-test:
-    runs-on: ubuntu-latest  # Tippfehler korrigiert
+    runs-on: ubuntu-latest # Tippfehler korrigiert
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4  # Version aktualisiert
+        uses: actions/checkout@v4 # Version aktualisiert
 
       - name: Set up Node.js
         uses: actions/setup-node@v4
@@ -18,7 +18,7 @@ jobs:
           node-version: '18.x'
 
       - name: Install dependencies
-        run: npm ci  # Verbesserte Installation
+        run: npm ci # Verbesserte Installation
 
       - name: Run linter
         run: npm run lint
